@@ -6,7 +6,7 @@ const Services: React.FC = () => {
   return (
     <div className="about-container">
       <Nav />
-      <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left">Services</h1>
+      <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left pt-20 pb-5">Services</h1>
       <p className="list-disc list-inside text-left">
 <strong>Buyer Representation <br /></strong>
 Guidance through every step of the home buying process—from the first showing to the final signature.
