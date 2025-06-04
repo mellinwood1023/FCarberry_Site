@@ -1,10 +1,10 @@
 import React from 'react';
+import Hero from '../components/Hero';
 
 const Home: React.FC = () => {
   return (
     <div className="home-container">
-      <h1>Welcome to My Home Page</h1>
-      <p>This is your new homepage. Customize this content as you like!</p>
+      <Hero />
     </div>
   );
 };

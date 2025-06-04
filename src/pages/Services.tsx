@@ -1,14 +1,14 @@
 import React from 'react';
 import Nav from '../components/Nav';
 
-const About: React.FC = () => {
+const Services: React.FC = () => {
   return (
     <div className="about-container">
       <Nav />
-      <h1>About Me</h1>
-      <p>This is the About page. Add your information here.</p>
+      <h1>Services</h1>
+      <p>Add your information here.</p>
     </div>
   );
 };
 
-export default About;
+export default Services;
