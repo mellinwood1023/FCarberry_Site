@@ -104,7 +104,7 @@ export default function Hero() {
         <div>
           <image>
           <img
-            src="public\agent-2020-fred-carberry.jpg"
+            src="/agent-2020-fred-carberry.jpg"
             alt="Fred Carberry, Realtor"
             className="mx-auto w-50% max-w-2xl rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2"
           />

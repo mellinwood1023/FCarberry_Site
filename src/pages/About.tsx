@@ -21,7 +21,7 @@ const About: React.FC = () => {
         </div>
         <div className="w-full md:w-80 flex-shrink-0 flex flex-col gap-4 items-center">
           {/* Example photo slots, replace src with your own images */}
-          <img src="public\fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
+          <img src="/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
           {/* Add more <img> tags here for additional photos */}
           {/* <img src="/public/another_photo.jpg" alt="Description" className="rounded-lg shadow-md w-full object-cover" /> */}
         </div>
