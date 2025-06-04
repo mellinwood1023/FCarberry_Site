@@ -5,8 +5,13 @@ import Footer from '../components/Footer';
 const About: React.FC = () => {
   return (
     <>
-      <div className="about-container max-w-5xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-8 items-start">
+      <div className="about-container max-w-5xl mx-auto px-4 py-10 flex flex-col sm:flex-row gap-8 items-start flex-wrap">
         <Nav />
+        <div className="w-full sm:w-1/2 flex flex-row gap-4 justify-center items-start flex-wrap">
+          <img src="/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
+          <img src="/Jungle_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-40 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
+          <img src="/horses_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
+        </div>
         <div className="flex-1">
           <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left">About Me</h1>
           <div className="bg-white/70 rounded-xl shadow-lg p-8 space-y-4 text-left backdrop-blur-sm">
@@ -30,14 +35,6 @@ const About: React.FC = () => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-gradient-to-tr from-white to-sky-600 opacity-70 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        </div>
-        <div className="w-full md:w-80 flex-shrink-0 flex flex-col gap-4 items-center">
-          {/* Example photo slots, replace src with your own images */}
-          <img src="/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
-          <img src="/Jungle_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
-          <img src="/horses_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
-          {/* Add more <img> tags here for additional photos */}
-          {/* <img src="/public/another_photo.jpg" alt="Description" className="rounded-lg shadow-md w-full object-cover" /> */}
         </div>
       </div>
       <Footer />
