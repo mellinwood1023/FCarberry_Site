@@ -14,6 +14,7 @@ const navigation = [
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const remaxPhoto = "public/remax_mastrballoon_cmyk_r.jpg";
 
   return (
     <div className="bg-white">
@@ -55,7 +56,7 @@ export default function Hero() {
                 <span className="sr-only">Your Company</span>
                 <img
                   alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  src={ remaxPhoto }
                   className="h-8 w-auto"
                 />
               </a>
@@ -110,7 +111,7 @@ export default function Hero() {
         </image>
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-              Fred Carberry, Realtor 
+              Frederick Carberry, Realtor 
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
               Turning your real estate dreams into reality. Whether you're buying or selling, I'm here to help you every step of the way.

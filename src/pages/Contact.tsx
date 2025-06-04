@@ -1,6 +1,7 @@
 import Form from '../components/Form'
 import React from 'react';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 const Contact: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Contact: React.FC = () => {
       <h1 className="pt-20">Let's Connect</h1>
       <p className="pt-7 pb-9">If you have any questions or would like to get in touch, please fill out the form below.</p>
       <Form />
+      <Footer />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-700 text-white py-6 mt-10">
+        <footer className="bg-gray-700 text-white py-6 mt-10 absolute inset-x-0 z-50">
             <div className="container mx-auto text-center">
                 <div className="flex flex-col items-center space-y-2 mt-4">
                     <div className="flex space-x-4 justify-center">
@@ -20,7 +20,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <p className="text-sm text-center">
-                        &copy; {new Date().getFullYear()} Your Company Name. All rights reserved.
+                        &copy; {new Date().getFullYear()} Frederick Carberry. All rights reserved.
                     </p>
                     <p className="text-xs mt-2 text-center">
                         Built with ❤️ by Magdalene Ellinwood, Junior Software Developer

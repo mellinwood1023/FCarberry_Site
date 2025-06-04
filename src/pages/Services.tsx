@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 const Services: React.FC = () => {
     const Divider = () => <hr className="m-1 " />;
@@ -43,6 +44,7 @@ Helping entrepreneurs and investors buy and sell commercial or mixed-use propert
 <Divider />
 <strong>Market Analysis & Home Valuation <br /></strong>
 Detailed reports to help you understand your home’s market value and trends.</p>
+    <Footer />
     </div>
   );
 };

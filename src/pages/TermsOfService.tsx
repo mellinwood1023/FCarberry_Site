@@ -14,7 +14,7 @@ const TermsOfService: React.FC = () => {
 
       <h2 className="text-xl font-semibold mb-2">1. Website Purpose</h2>
       <p className="mb-4">
-        This website is intended to provide general information about real estate services offered by [Realtor's Full Name], including listings, testimonials, and contact options. It is not intended to provide legal or financial advice.
+        This website is intended to provide general information about real estate services offered by Frederick Carberry, including listings, testimonials, and contact options. It is not intended to provide legal or financial advice.
       </p>
 
       <h2 className="text-xl font-semibold mb-2">2. No Guarantees</h2>
@@ -29,7 +29,7 @@ const TermsOfService: React.FC = () => {
 
       <h2 className="text-xl font-semibold mb-2">4. Intellectual Property</h2>
       <p className="mb-4">
-        All content on this website, including text, images, logos, and layout, is the property of [Realtor's Full Name] unless otherwise credited. You may not copy, reproduce, or distribute any content without prior written permission.
+        All content on this website, including text, images, logos, and layout, is the property of Frederick Carberry unless otherwise credited. You may not copy, reproduce, or distribute any content without prior written permission.
       </p>
 
       <h2 className="text-xl font-semibold mb-2">5. Links to Third-Party Sites</h2>
@@ -39,7 +39,7 @@ const TermsOfService: React.FC = () => {
 
       <h2 className="text-xl font-semibold mb-2">6. Limitation of Liability</h2>
       <p className="mb-4">
-        [Realtor's Full Name] shall not be liable for any direct, indirect, incidental, or consequential damages arising out of your use of this site or reliance on any information provided herein.
+        Frederick Carberry or ReMax Partners shall not be liable for any direct, indirect, incidental, or consequential damages arising out of your use of this site or reliance on any information provided herein.
       </p>
 
       <h2 className="text-xl font-semibold mb-2">7. Changes to Terms</h2>
@@ -49,7 +49,7 @@ const TermsOfService: React.FC = () => {
 
       <h2 className="text-xl font-semibold mb-2">8. Contact</h2>
       <p className="mb-4">
-        If you have any questions about these terms, please contact us at [your@email.com].
+        If you have any questions about these terms, please contact us at fcarberry70@gmail.com.
       </p>
 
       <p className="text-sm text-gray-600">
