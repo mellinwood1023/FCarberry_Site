@@ -89,7 +89,7 @@ export default function Hero() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="flex flex-row items-center justify-center max-w-6xl mx-auto gap-12">
+        <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-8 flex flex-row items-center justify-center max-w-6xl mx-auto gap-12">
           <div className="w-1/2 flex justify-center">
             <img
               src="/agent-2020-fred-carberry.jpg"
@@ -99,7 +99,7 @@ export default function Hero() {
           </div>
           <div className="w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-balance text-gray-900">
-              Frederick Carberry 
+              Frederick Carberry
               <p className="text-3xl "> Licensed Realtor at Re/Max Partners </p>
             </h1>
             <p className="mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-pretty text-gray-500">
