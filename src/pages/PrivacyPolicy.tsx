@@ -30,6 +30,7 @@ const PrivacyPolicy: React.FC = () => {
         Last updated: {new Date().toLocaleDateString()}
       </p>
       <Footer />
+      
     </div>
   );
 };

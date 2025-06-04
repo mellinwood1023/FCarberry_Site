@@ -8,6 +8,7 @@ const Services: React.FC = () => {
     <div className="about-container">
       <Nav />
       <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left pt-20 pb-5">Services</h1>
+      <div className="max-w-2xl mx-auto bg-white/70 rounded-xl shadow-lg p-6 space-y-4 backdrop-blur-sm">
       <p className="list-disc list-inside text-left">
 <strong>Buyer Representation <br /></strong>
 Guidance through every step of the home buying process—from the first showing to the final signature.
@@ -44,7 +45,20 @@ Helping entrepreneurs and investors buy and sell commercial or mixed-use propert
 <Divider />
 <strong>Market Analysis & Home Valuation <br /></strong>
 Detailed reports to help you understand your home’s market value and trends.</p>
+      </div>
     <Footer />
+     <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 4.1%, 100% 61.6%, 47.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-gradient-to-tr from-white to-blue-700 opacity-70 sm:left-[calc(50%-30rem)] sm:w-288.75"
+          />
+        </div>
     </div>
   );
 };

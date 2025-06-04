@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <Nav />
         <div className="flex-1">
           <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left">About Me</h1>
-          <div className="space-y-4 text-left">
+          <div className="bg-white/70 rounded-xl shadow-lg p-8 space-y-4 text-left backdrop-blur-sm">
             <p className="text-gray-800 leading-relaxed">For over two decades, I’ve had the honor of helping people find more than just properties—I help them find places where memories are made. With 24 years of experience, I specialize in everything from luxury homes and new construction to lakefront getaways, farmland, and vacation retreats. Whether you're relocating, investing, or buying your very first home, I bring patience, local insight, and an unwavering commitment to your goals.</p>
             <p className="text-gray-800 leading-relaxed">But real estate is just one part of my story.</p>
             <p className="text-gray-800 leading-relaxed">I’ve been married to the love of my life since 2004. I'm a proud dad of four and “Nanu” to three grandkids who keep me on my toes and keep my life overflowing with fulfillment. When I’m not helping clients close on their dream homes, you’ll catch me cruising on my motorcycle, yelling at the Patriots on TV, or casting a line on the boat with my grandson. If there’s a campsite or a classic car show nearby, chances are I’m there—with a coffee in hand, soaking it all in.</p>
@@ -18,10 +18,24 @@ const About: React.FC = () => {
             <p className="text-gray-800 leading-relaxed">During the week, I also serve as Fleet Supervisor for the City of Lawrence, MA—a role that keeps me grounded, sharp, and always ready to solve the next challenge. In 2019, I was proud to receive the Executive Award, which reminds me that hard work and heart never go unnoticed.</p>
             <p className="text-gray-800 leading-relaxed">If you're looking for a Realtor who knows the value of a handshake, believes in doing right by people, and brings a bit of Boston grit to everything he does, I’d be honored to help you find your next home—or your next great investment.</p>
           </div>
+           <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-gradient-to-tr from-white to-blue-700 opacity-70 sm:left-[calc(50%-30rem)] sm:w-288.75"
+          />
+        </div>
         </div>
         <div className="w-full md:w-80 flex-shrink-0 flex flex-col gap-4 items-center">
           {/* Example photo slots, replace src with your own images */}
           <img src="/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
+          <img src="/Jungle_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
+          <img src="/horses_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-full object-cover" />
           {/* Add more <img> tags here for additional photos */}
           {/* <img src="/public/another_photo.jpg" alt="Description" className="rounded-lg shadow-md w-full object-cover" /> */}
         </div>
