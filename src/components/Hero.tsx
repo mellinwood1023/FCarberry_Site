@@ -108,7 +108,9 @@ export default function Hero() {
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-balance text-gray-900">
               Frederick Carberry
-              <p className="text-3xl "> Licensed Realtor at Re/Max Partners </p>
+              <p className="text-2xl"> Licensed Realtor </p>
+              <p className="text-2xl text-gray-800">serving Massachussetts & New Hampshire </p>
+              <p className="text-xs text-gray-500">RE/MAX Partners</p>
             </h1>
             <p className="mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-pretty text-gray-500">
               Turning your real estate dreams into reality. Whether you're buying or selling, I'm here to help you every step of the way.
