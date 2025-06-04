@@ -19,26 +19,34 @@ export default function Hero() {
   return (
     <div className="bg-white">
       <header className="relative inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
-                alt=""
-                src="public\remax_mastrballoon_cmyk_r.jpg"
-                className="h-8 w-auto"
-              />
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="size-6" />
-            </button>
+        <nav aria-label="Global" className="flex flex-row items-center justify-between p-6 lg:px-8 gap-2">
+          <div className="flex items-center space-x-2 mb-0">
+            <img
+              alt="Home 3"
+              src="/home3.jpeg"
+              className="h-12 w-50 rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
+            />
+            <img
+              alt="Skyview homes"
+              src="/skyview2.webp"
+              className="h-12 w-50 rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
+            />
+            <img
+              alt="House 4"
+              src="/house4.webp"
+              className="h-12 w-50 rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
+            />
+            {/* Hamburger button inline with photos on mobile */}
+            <div className="flex lg:hidden ml-2">
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(true)}
+                className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              >
+                <span className="sr-only">Open main menu</span>
+                <Bars3Icon aria-hidden="true" className="w-5 h-5 sm:w-6 sm:h-6" />
+              </button>
+            </div>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
