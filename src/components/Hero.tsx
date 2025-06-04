@@ -88,16 +88,16 @@ export default function Hero() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-8 flex flex-row items-center justify-center max-w-6xl mx-auto gap-12">
-          <div className="w-1/2 flex justify-center">
+      <div className="relative isolate px-6 pt-3 lg:px-8">
+        <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-9 flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-8">
+          <div className="w-full lg:w-1/2 flex justify-center">
             <img
               src="/agent-2020-fred-carberry.jpg"
               alt="Fred Carberry, Realtor"
               className="w-70 max-w-md rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
             />
           </div>
-          <div className="w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-balance text-gray-900">
               Frederick Carberry
               <p className="text-3xl "> Licensed Realtor at Re/Max Partners </p>
