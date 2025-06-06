@@ -3,6 +3,23 @@ import { useState } from 'react';
 export default function Form() {
   const [hasPreapproval, setHasPreapproval] = useState('');
   const [budget, setBudget] = useState('');
+  const formatPhone = (value : string) => {
+    const cleaned = value.replace(/\D/g, '');
+    const match = cleaned.match(/^(\d{0,3})(\d{0,3})(\d{0,4})$/);
+    if (!match) return value;
+
+    let result = '';
+    if (match[1]) result += `(${match[1]}`;
+    if (match[2]) result += `) ${match[2]}`;
+    if (match[3]) result += `-${match[3]}`;
+    return result;
+  };
+
+  const formatBudget = (value: string) => {
+    const cleaned = value.replace(/\D/g, '');
+    return cleaned.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  };
+  const [ phone, setPhone ] = useState('');
 
   return (
     <form className="space-y-8" method="POST" action="https://formspree.io/f/your-form-id">
@@ -44,6 +61,9 @@ export default function Form() {
               id="phone"
               name="phone"
               type="tel"
+              value={phone}
+              onChange={(e) => setPhone(formatPhone(e.target.value))}
+              maxLength={14}
               autoComplete="tel"
               required
               className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
@@ -110,8 +130,9 @@ export default function Form() {
               id="budget"
               name="budget"
               type="text"
+              inputMode="numeric"
               value={budget}
-              onChange={(e) => setBudget(e.target.value)}
+              onChange={(e) => setBudget(formatBudget(e.target.value))}
               className="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             />
           </div>

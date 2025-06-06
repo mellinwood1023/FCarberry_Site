@@ -19,22 +19,22 @@ export default function Hero() {
   return (
     <div className="bg-white">
       <header className="relative inset-x-0 top-0 z-50">
-        <nav className="flex flex-wrap items-center justify-between p-4 sm:p-6 lg:px-8">
-          <div className="flex items-center flex-wrap gap-2 w-full">
+        <nav className="flex flex-col bg-sky-100 items-center justify-between p-4 sm:p-6 lg:px-8">
+          <div className="w-full flex flex-col sm:flex-row items-center gap-2">
             <img
               src="/images/home3.jpeg"
               alt="Home 3"
-              className="h-12 w-auto rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
+              className="w-full h-12 sm:w-1/3 rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
             />
             <img
               src="/images/skyview2.webp"
               alt="Skyview"
-              className="h-12 w-auto rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
+              className="w-full h-12 sm:w-1/3  rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
             />
             <img
               src="/images/house4.webp"
               alt="House 4"
-              className="h-12 w-auto rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
+              className="w-full h-12 sm:w-1/3  rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
             />
             <div className="ml-auto flex lg:hidden">
               <button
