@@ -27,10 +27,11 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* Add this if needed */
   min-width: 320px;
   min-height: 100vh;
-  background-color: unset;
+  background-color: white; /* Force white background */
+  color: #213547; /* Optional: set readable text color */
 }
 
 h1 {
