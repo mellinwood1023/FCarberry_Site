@@ -19,42 +19,24 @@ export default function Hero() {
   return (
     <div className="bg-white">
       <header className="relative inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8">
-          {/* Images across the full width on desktop */}
-          <div className="flex flex-1 justify-between items-center w-full">
-            <div className="flex flex-1 justify-between gap-4 max-w-[60%]">
-              <img
-                src="/images/home3.jpeg"
-                alt="Home 3"
-                className="h-12 flex-1 rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
-              />
-              <img
-                src="/images/skyview2.webp"
-                alt="Skyview"
-                className="h-12 flex-1 rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
-              />
-              <img
-                src="/images/house4.webp"
-                alt="House 4"
-                className="h-12 flex-1 rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
-              />
-            </div>
-
-            {/* Desktop nav */}
-            <div className="hidden lg:flex gap-x-8 ml-auto">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="text-sm font-semibold text-gray-900 hover:text-red-700"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-
-            {/* Hamburger - only visible on mobile */}
-            <div className="lg:hidden ml-4">
+        <nav className="flex flex-wrap items-center justify-between p-4 sm:p-6 lg:px-8">
+          <div className="flex items-center flex-wrap gap-2 w-full">
+            <img
+              src="/images/home3.jpeg"
+              alt="Home 3"
+              className="h-12 w-auto rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
+            />
+            <img
+              src="/images/skyview2.webp"
+              alt="Skyview"
+              className="h-12 w-auto rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
+            />
+            <img
+              src="/images/house4.webp"
+              alt="House 4"
+              className="h-12 w-auto rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
+            />
+            <div className="ml-auto flex lg:hidden">
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(true)}
@@ -65,9 +47,20 @@ export default function Hero() {
               </button>
             </div>
           </div>
+
+          <div className="hidden lg:flex gap-x-8 ml-auto">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className="text-sm font-semibold text-gray-900 hover:text-red-700"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </nav>
 
-        {/* Mobile menu dialog */}
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50 bg-black/30" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full sm:max-w-sm bg-white px-6 py-6 overflow-y-auto shadow-lg">
@@ -99,9 +92,8 @@ export default function Hero() {
         </Dialog>
       </header>
 
-      {/* Main content */}
       <div className="relative isolate px-4 sm:px-6 pt-3 lg:px-8">
-         <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-6 sm:p-9 flex flex-col lg:flex-row items-center justify-center max-w-6xl w-full mx-auto gap-8">
+        <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-6 sm:p-9 flex flex-col lg:flex-row items-center justify-center max-w-6xl w-full mx-auto gap-8">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
               src="/images/agent-2020-fred-carberry.jpg"
@@ -133,7 +125,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Background shape */}
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
