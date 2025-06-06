@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Testimonials from './pages/Testimonials';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
+import Links from './pages/Links';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/testimonials" element={<Testimonials />} />
       <Route path="/termsofservice" element={<TermsOfService />} />
       <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+      <Route path="/links" element={<Links />} />
       {/* Add more routes as needed */}
     </Routes>
   );
