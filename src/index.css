@@ -30,7 +30,7 @@ body {
   flex-direction: column; /* Add this if needed */
   min-width: 320px;
   min-height: 100vh;
-  background-color: #cde6fc; /* Force white background */
+  background-color: #dfeffc; /* Force white background */
   color: #213547; /* Optional: set readable text color */
 }
 

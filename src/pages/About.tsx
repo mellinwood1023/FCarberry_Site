@@ -7,13 +7,13 @@ const About: React.FC = () => {
     <>
       <div className="about-container max-w-5xl mx-auto px-4 py-10 flex flex-col sm:flex-row gap-8 items-start flex-wrap">
         <Nav />
-        <div className="w-full sm:w-1/2 flex flex-row gap-4 justify-center items-start flex-wrap">
+        <div className="w-75% sm:w-1/2 flex flex-row gap-4 justify-center items-start flex-wrap">
           <img src="/images/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
           <img src="/images/Jungle_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-40 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
           <img src="/images/horses_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
         </div>
         <div className="flex-1">
-          <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left">About Me</h1>
+          <h1 className="text-3xl font-bold text-blue-900 mb-6 text-center">About Me</h1>
           <div className="bg-white/70 rounded-xl shadow-lg p-8 space-y-4 text-left backdrop-blur-sm">
             <p className="text-gray-800 leading-relaxed">For over two decades, I’ve had the honor of helping people find more than just properties—I help them find places where memories are made. With 24 years of experience, I specialize in everything from luxury homes and new construction to lakefront getaways, farmland, and vacation retreats. Whether you're relocating, investing, or buying your very first home, I bring patience, local insight, and an unwavering commitment to your goals.</p>
             <p className="text-gray-800 leading-relaxed">But real estate is just one part of my story.</p>
