@@ -54,29 +54,29 @@ export default function Nav() {
       )}
       {/* Mobile menu panel */}
       {mobileMenuOpen && (
-        <div className="fixed inset-y-0 right-0 z-50 w-64 bg-white shadow-lg p-6 flex flex-col gap-4">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(false)}
-            className="self-end mb-4"
-          >
-            <span className="sr-only">Close menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className="block text-lg font-semibold text-blue-900 hover:text-red-700"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
+        <div className="fixed top-0 right-0 h-full w-64 z-[100] bg-white shadow-lg p-6 flex flex-col gap-4 overflow-auto lg:h-auto lg:top-[72px] lg:rounded-bl-xl">
+            <button
+                type="button"
+                onClick={() => setMobileMenuOpen(false)}
+                className="self-end mb-4"
+                >
+                <span className="sr-only">Close menu</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            {navigation.map((item) => (
+                <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block text-lg font-semibold text-blue-900 hover:text-red-700"
+                    onClick={() => setMobileMenuOpen(false)}
+                    >
+                     {item.name}
+                </Link>
+             ))}
         </div>
-      )}
+    )}
     </div>
   )
 }
