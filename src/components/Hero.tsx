@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const remaxPhoto = 'public/images/remax_mastrballoon_cmyk_r.jpg'
+  const remaxPhoto = '/images/remax_mastrballoon_cmyk_r.jpg'
 
   return (
     <div className="bg-white">
