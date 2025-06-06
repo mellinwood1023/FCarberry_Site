@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const remaxPhoto = "public/remax_mastrballoon_cmyk_r.jpg";
+  const remaxPhoto = "public/images/remax_mastrballoon_cmyk_r.jpg";
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">

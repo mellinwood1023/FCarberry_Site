@@ -8,9 +8,9 @@ const About: React.FC = () => {
       <div className="about-container max-w-5xl mx-auto px-4 py-10 flex flex-col sm:flex-row gap-8 items-start flex-wrap">
         <Nav />
         <div className="w-full sm:w-1/2 flex flex-row gap-4 justify-center items-start flex-wrap">
-          <img src="/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
-          <img src="/Jungle_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-40 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
-          <img src="/horses_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
+          <img src="/images/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
+          <img src="/images/Jungle_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-40 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
+          <img src="/images/horses_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
         </div>
         <div className="flex-1">
           <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left">About Me</h1>

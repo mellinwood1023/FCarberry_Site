@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const remaxPhoto = "public/remax_mastrballoon_cmyk_r.jpg";
+  const remaxPhoto = "public/images/remax_mastrballoon_cmyk_r.jpg";
 
   return (
     <div className="bg-white">
@@ -23,17 +23,17 @@ export default function Hero() {
           <div className="flex items-center space-x-2 mb-0">
             <img
               alt="Home 3"
-              src="/home3.jpeg"
+              src="/images/home3.jpeg"
               className="h-12 w-50 rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
             />
             <img
               alt="Skyview homes"
-              src="/skyview2.webp"
+              src="/images/skyview2.webp"
               className="h-12 w-50 rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
             />
             <img
               alt="House 4"
-              src="/house4.webp"
+              src="/images/house4.webp"
               className="h-12 w-50 rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
             />
             {/* Hamburger button inline with photos on mobile */}
@@ -100,7 +100,7 @@ export default function Hero() {
         <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-9 flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-8">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
-              src="/agent-2020-fred-carberry.jpg"
+              src="/images/agent-2020-fred-carberry.jpg"
               alt="Fred Carberry, Realtor"
               className="w-70 max-w-md rounded-lg shadow-lg ring-1 ring-gray-900/10 sm:rounded-xl sm:ring-2 object-cover"
             />
