@@ -100,8 +100,8 @@ export default function Hero() {
       </header>
 
       {/* Main content */}
-      <div className="relative isolate px-6 pt-3 lg:px-8">
-        <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-9 flex flex-col lg:flex-row items-center justify-center max-w-6xl mx-auto gap-8">
+      <div className="relative isolate px-4 sm:px-6 pt-3 lg:px-8">
+         <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-6 sm:p-9 flex flex-col lg:flex-row items-center justify-center max-w-6xl w-full mx-auto gap-8">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
               src="/images/agent-2020-fred-carberry.jpg"
