@@ -20,7 +20,7 @@ export default function Hero() {
     <div className="bg-white">
       <header className="relative inset-x-0 top-0 z-50">
         <nav className="flex flex-col bg-sky-100 items-center justify-between p-4 sm:p-6 lg:px-8">
-          <div className="w-full flex flex-col sm:flex-row items-center gap-2">
+          <div className="w-full flex flex-row sm:flex-row items-center gap-2">
             <img
               src="/images/home3.jpeg"
               alt="Home 3"
