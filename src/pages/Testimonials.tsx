@@ -5,12 +5,15 @@ import Footer from '../components/Footer';
 
 const Testimonials: React.FC = () => {
   return (
-    <div className="about-container">
+    <>
       <Nav />
-      <TestimonialForm />
-      <h1>My Clients Say..</h1>
+      <div className="px-4 py-8 max-w-5xl mx-auto">
+        <TestimonialForm />
+        <h1 className="text-3xl font-bold text-blue-900 mt-8">My Clients Say...</h1>
+        {/* Testimonial content goes here */}
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
