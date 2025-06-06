@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const remaxPhoto = "public/images/remax_mastrballoon_cmyk_r.jpg";
+  const remaxPhoto = "/images/remax_mastrballoon_cmyk_r.jpg";
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -23,8 +23,8 @@ export default function Nav() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                alt=""
-                src= { remaxPhoto }
+                alt="Re/Max Balloon"
+                src={remaxPhoto}
                 className="h-8 w-auto"
               />
             </a>
