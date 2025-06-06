@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <div className="bg-white overflow-x-hidden">
       <header className="relative inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex flex-row items-center justify-between p-6 lg:px-8 gap-2">
+        <nav aria-label="Global" className="flex flex-row items-center justify-between p-6 lg:px-8 ">
           <div className="flex items-center space-x-2 mb-0">
             <img
               alt="Home 3"
@@ -47,14 +47,27 @@ export default function Hero() {
               </button>
             </div>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <Link key={item.name} to={item.href} className="text-sm/6 font-semibold text-gray-900">
-                {item.name}
-              </Link>
-            ))}
-          </div>
-        </nav>
+           <div className="flex items-center space-x-6">
+            <div className="hidden lg:flex lg:gap-x-12">
+              {navigation.map((item) => (
+                <Link key={item.name} to={item.href} className="text-sm/6 font-semibold text-gray-900">
+                 {item.name}
+               </Link>
+              ))}
+           </div>
+
+      <div className="lg:hidden">
+        <button
+           type="button"
+           onClick={() => setMobileMenuOpen(true)}
+           className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+           >
+          <span className="sr-only">Open main menu</span>
+          <Bars3Icon aria-hidden="true" className="w-5 h-5 sm:w-6 sm:h-6" />
+       </button>
+     </div>
+   </div>
+</nav>
 
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
