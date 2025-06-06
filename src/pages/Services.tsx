@@ -10,12 +10,11 @@ const Services: React.FC = () => {
       <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left pt-20 pb-5">Services</h1>
       <div className="flex flex-col md:flex-row gap-8 items-start">
         <div className="w-full md:w-80 flex-shrink-0 flex flex-row gap-4 justify-center items-start flex-wrap mb-4 md:flex-col md:gap-4 md:items-start md:mt-10">
-          {/* Example photo slots, replace src with your own images */}
           <img src="/images/home2.jpeg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-28 md:w-full object-cover transition-all duration-300" />
           <img src="/images/home1.webp" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-28 md:w-full object-cover transition-all duration-300" />
           <img src="/images/skyviewhomes.webp" alt="Fred Carberry" className="rounded-lg shadow-md w-35 sm:w-28 md:w-full object-cover transition-all duration-300" />
           {/* Add more <img> tags here for additional photos */}
-          {/* <img src="/public/another_photo.jpg" alt="Description" className="rounded-lg shadow-md w-full object-cover" /> */}
+          {/* <img src="/images/another_photo.jpg" alt="Description" className="rounded-lg shadow-md w-full object-cover" /> */}
         </div>
         <div className="flex-1">
           <div className="max-w-2xl bg-white/70 rounded-xl shadow-lg p-6 space-y-4 backdrop-blur-sm">
