@@ -7,9 +7,9 @@ const Services: React.FC = () => {
   return (
     <div className="about-container">
       <Nav />
-      <h1 className="text-3xl font-bold text-blue-900 mb-6 text-left pt-20 pb-5">Services</h1>
+      <h1 className="text-3xl font-bold text-blue-900 mb-6 text-center pt-20 pb-5">Services</h1>
       <div className="flex flex-col md:flex-row gap-8 items-start">
-        <div className="w-full md:w-80 flex-shrink-0 flex flex-row gap-4 justify-center items-start flex-wrap mb-4 md:flex-col md:gap-4 md:items-start md:mt-10">
+        <div className="w-75% md:w-80 flex-shrink-0 flex flex-row gap-4 justify-center items-start flex-wrap mb-4 md:flex-col md:gap-4 md:items-start md:mt-10">
           <img src="/images/home2.jpeg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-28 md:w-full object-cover transition-all duration-300" />
           <img src="/images/home1.webp" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-28 md:w-full object-cover transition-all duration-300" />
           <img src="/images/skyviewhomes.webp" alt="Fred Carberry" className="rounded-lg shadow-md w-35 sm:w-28 md:w-full object-cover transition-all duration-300" />
