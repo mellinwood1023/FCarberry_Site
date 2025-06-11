@@ -15,18 +15,26 @@ const About: React.FC = () => {
         <div className="flex-1">
           <h1 className="text-3xl font-bold text-blue-900 mb-6 text-center">About Me</h1>
           <div className="bg-white/70 rounded-xl shadow-lg p-8 space-y-4 text-left backdrop-blur-sm">
-            <p className="text-gray-800 leading-relaxed">For over two decades, I’ve had the honor of helping people find more than just properties—I help them find places where memories are made. With 24 years of experience, I specialize in everything from luxury homes and new construction to lakefront getaways, farmland, and vacation retreats. Whether you're relocating, investing, or buying your very first home, I bring patience, local insight, and an unwavering commitment to your goals.</p>
-            <p className="text-gray-800 leading-relaxed">But real estate is just one part of my story.</p>
-            <p className="text-gray-800 leading-relaxed">I’ve been married to the love of my life since 2004. I'm a proud dad of four and “Nanu” to three grandkids who keep me on my toes and keep my life overflowing with fulfillment. When I’m not helping clients close on their dream homes, you’ll catch me cruising on my motorcycle, yelling at the Patriots on TV, or casting a line on the boat with my grandson. If there’s a campsite or a classic car show nearby, chances are I’m there—with a coffee in hand, soaking it all in.</p>
-            <p className="text-gray-800 leading-relaxed">And when I really want to unwind? I travel. From the beaches of Puerto Rico and the Dominican Republic to the jungles of Costa Rica and the coastlines of Mexico—there’s nothing like stepping into a new place and soaking up the culture, food, and sun.</p>
-            <p className="text-gray-800 leading-relaxed">Family comes first, always. That’s why I treat every client like one of my own—with honesty, respect, and a little good-natured sarcasm if the moment calls for it.</p>
-            <p className="text-gray-800 leading-relaxed">During the week, I also serve as Fleet Supervisor for the City of Lawrence, MA—a role that keeps me grounded, sharp, and always ready to solve the next challenge. In 2019, I was proud to receive the Executive Award, which reminds me that hard work and heart never go unnoticed.</p>
-            <p className="text-gray-800 leading-relaxed">If you're looking for a Realtor who knows the value of a handshake, believes in doing right by people, and brings a bit of Boston grit to everything he does, I’d be honored to help you find your next home—or your next great investment.</p>
-          </div>
+            <p className="text-gray-800 leading-relaxed">
+            With over 24 years of experience in real estate, I’ve had the privilege of helping clients find more than just a property—I help them find a place to call home. My background includes working with luxury homes, new construction, lakefront properties, farmland, and vacation retreats. Whether you're a first-time homebuyer, relocating, or looking to invest, I offer local expertise, a steady hand, and a commitment to getting results.
+            </p>
+            <p className="text-gray-800 leading-relaxed">
+              Outside of real estate, I’m proud to be a husband since 2004, a father of four, and a grandfather to three. My family is at the heart of everything I do. I also enjoy riding motorcycles, spending time on the water, and following my favorite sports teams—especially the Patriots.
+            </p>
+            <p className="text-gray-800 leading-relaxed">
+              I’m passionate about travel and have explored destinations across Puerto Rico, Italy, Costa Rica, and Mexico. I believe in the value of new experiences and always bring that same energy and curiosity to my work.
+            </p>
+            <p className="text-gray-800 leading-relaxed">
+              In addition to real estate, I serve as Fleet Supervisor for the City of Lawrence, MA. In 2019, I was honored with the Executive Award—a recognition of leadership and dedication I bring to every professional role.
+            </p>
+            <p className="text-gray-800 leading-relaxed">
+              My approach is straightforward: treat every client with respect, honesty, and care—as if they were family. If you're searching for a real estate professional who is reliable, responsive, and deeply rooted in the community, I’d be glad to help you take the next step.
+            </p>
+        </div>
            <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        >
+            >
           <div
             style={{
               clipPath:
