@@ -112,6 +112,15 @@ export default function Hero() {
             <p className="mt-4 text-sm sm:text-base text-gray-600">
               Turning your real estate dreams into reality. Whether you're buying or selling, I'm here to help you every step of the way.
             </p>
+            <p className="text-xs text-gray-500 mt-10">Call or Text</p>
+            <div className="mt-1 flex flex-col sm:flex-row items-center gap-4">
+              <a
+                href="tel:978-479-4799"
+                className="text-sm font-semibold"
+              >
+                 (978) 479-4799
+              </a>
+              </div>
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
               <div className="hidden sm:flex">
                 <div className="mt-6 sm:mt-10">

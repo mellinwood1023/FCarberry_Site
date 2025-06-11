@@ -11,6 +11,15 @@ const Contact: React.FC = () => {
         <h1 className="pt-12 text-3xl font-bold text-blue-900">Let's Connect</h1>
         <p className="pt-7 pb-9">If you have any questions or would like to get in touch, please fill out the form below.</p>
         <Form />
+        <p className="pt-7 pb-9">Form issues? Email me directly at:</p>
+        <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=fcarberry70@gmail.com&su=Real%20Estate%20Inquiry&body=Hi%20Frederick,"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-800 hover:underline"
+            >
+             fcarberry70@gmail.com
+        </a>
       </div>
       <Footer />
       <div
