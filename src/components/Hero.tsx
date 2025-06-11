@@ -93,7 +93,7 @@ export default function Hero() {
         </Dialog>
       </header>
 
-      <div className="relative isolate px-4 sm:px-6 pt-3 lg:px-8">
+      <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-10 p-4 sm:p-8">
         <div className="bg-white/70 rounded-xl shadow-lg backdrop-blur-sm p-6 sm:p-9 flex flex-col lg:flex-row items-center justify-center max-w-6xl w-full mx-auto gap-8">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -102,23 +102,24 @@ export default function Hero() {
               className="w-70 max-w-md rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
             />
           </div>
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900">
+           <div className="w-full lg:w-1/2 flex flex-col items-center text-center px-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900">
               Frederick Carberry
-              <p className="text-2xl">Licensed Realtor</p>
-              <p className="text-2xl text-gray-800">serving Massachusetts & New Hampshire</p>
+              <p className="text-lg text-gray-800">Licensed Realtor</p>
+              <p className="text-base text-gray-700">serving Massachusetts & New Hampshire</p>
               <p className="text-xs text-gray-500">RE/MAX Partners</p>
             </h1>
-            <p className="mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-gray-500">
+            <p className="mt-4 text-sm sm:text-base text-gray-600">
               Turning your real estate dreams into reality. Whether you're buying or selling, I'm here to help you every step of the way.
             </p>
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
               <div className="hidden sm:flex">
-                <div className="relative rounded-full px-3 py-1 text-sm text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                  Start the preapproval process with Remaxx Realtors{' '}
-                  <a href="#" className="font-semibold text-indigo-600">
-                    <span className="absolute inset-0" aria-hidden="true" />
-                    Here &rarr;
+                <div className="mt-6 sm:mt-10">
+                  <a
+                    href="#"
+                    className="block text-sm text-center text-indigo-600 font-semibold border border-indigo-600 px-4 py-2 rounded-md hover:bg-indigo-50"
+                  >
+                    Start the preapproval process →
                   </a>
                 </div>
               </div>
