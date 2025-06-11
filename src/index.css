@@ -17,7 +17,7 @@
 
 a {
   font-weight: 500;
-  color: #1d008f;
+  color: #fdfdfe;
   text-decoration: inherit;
 }
 a:hover {
@@ -30,8 +30,14 @@ body {
   flex-direction: column; /* Add this if needed */
   min-width: 320px;
   min-height: 100vh;
-  background-color: #eaf5fe; /* Force white background */
+  background-color: #efe7dd; /* Force white background */
   color: #213547; /* Optional: set readable text color */
+  background: linear-gradient(
+    135deg,
+    rgba(239, 231, 221, 1) 0%,
+    rgb(249, 248, 247) 50%,
+    rgba(239, 231, 221, 0.8) 100%
+  );
 }
 
 h1 {
@@ -69,4 +75,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+ul {
+  background-color: #fcfcfc;
+  color: #213547;
+  text-align: left;
 }

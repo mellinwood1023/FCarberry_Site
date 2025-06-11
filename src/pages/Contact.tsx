@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
             href="https://mail.google.com/mail/?view=cm&fs=1&to=fcarberry70@gmail.com&su=Real%20Estate%20Inquiry&body=Hi%20Frederick,"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-800 hover:underline"
+            className="text-blue-800 hover:underline bg-sky-800 rounded pr-0.5 pl-0.5"
             >
              fcarberry70@gmail.com
         </a>

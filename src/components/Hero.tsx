@@ -18,9 +18,9 @@ export default function Hero() {
   const remaxPhoto = '/images/remax_mastrballoon_cmyk_r.jpg'
 
   return (
-    <div className="bg-white">
+    <div className="bg-white rounded-b-lg shadow-lg backdrop-blur-sm ">
       <header className="relative inset-x-0 top-0 z-50">
-        <nav className="flex flex-col bg-sky-100 items-center justify-between p-4 sm:p-6 lg:px-8">
+        <nav className="flex flex-col bg-sky-900 items-center rounded-t-lg justify-between p-4 sm:p-6 lg:px-8">
           <div className="w-full flex flex-row sm:flex-row items-center gap-2">
             <img
               src="/images/home3.jpeg"
@@ -49,7 +49,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hidden lg:flex gap-x-8 ml-auto">
+          <div className="hidden lg:flex gap-x-8 mt-4 ml-auto">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -64,7 +64,7 @@ export default function Hero() {
 
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50 bg-black/30" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full sm:max-w-sm bg-white px-6 py-6 overflow-y-auto shadow-lg">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full sm:max-w-sm bg-sky-900 px-6 py-6 overflow-y-auto shadow-lg">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <img src={remaxPhoto} alt="" className="h-8 w-auto" />
@@ -109,11 +109,9 @@ export default function Hero() {
               <p className="text-base text-gray-700">serving Massachusetts & New Hampshire</p>
               <p className="text-xs text-gray-500">RE/MAX Partners</p>
             </h1>
-            <p className="mt-4 text-sm sm:text-base text-gray-600">
-              Turning your real estate dreams into reality. Whether you're buying or selling, I'm here to help you every step of the way.
-            </p>
+
             <p className="text-xs text-gray-500 mt-10">Call or Text</p>
-            <div className="mt-1 flex flex-col sm:flex-row items-center gap-4">
+            <div className="mt-1 flex flex-col sm:flex-row items-center gap-4 bg-sky-900 rounded-lg shadow-md p-2 hover:bg-indigo-50 ">
               <a
                 href="tel:978-479-4799"
                 className="text-sm font-semibold"
@@ -121,14 +119,26 @@ export default function Hero() {
                  (978) 479-4799
               </a>
               </div>
+            <p className="mt-15 text-sm sm:text-base text-gray-600">
+              Turning your real estate dreams into reality. Whether you're buying or selling, I'm here to help you every step of the way.
+            </p>
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-x-6">
               <div className="hidden sm:flex">
-                <div className="mt-6 sm:mt-10">
+                <div className="mt-2 sm:mt-2">
                   <a
                     href="#"
-                    className="block text-sm text-center text-indigo-600 font-semibold border border-indigo-600 px-4 py-2 rounded-md hover:bg-indigo-50"
+                    className="block text-sm text-center font-semibold border px-4 py-2 hover:bg-indigo-50  bg-sky-900 rounded-lg shadow-md p-2"
                   >
                     Start the preapproval process →
+                  </a>
+                  <p>
+                    <span className="text-xs text-gray-500">or</span>
+                  </p>
+                  <a
+                    href="https://www.remax.com/"
+                    className="block text-sm text-center font-semibold border px-4 py-2 hover:bg-indigo-50  bg-sky-900 rounded-lg shadow-md p-2"
+                  >
+                    Search for properties  →
                   </a>
                 </div>
               </div>

@@ -18,15 +18,15 @@ export default function Nav() {
   const remaxPhoto = "/images/remax_mastrballoon_cmyk_r.jpg";
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="absolute inset-x-0 top-0 z-50 bg-sky-900  shadow-lg backdrop-blur-sm">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#" className="-m-1.5 p-1.5 ">
               <span className="sr-only">Your Company</span>
               <img
                 alt="Re/Max Balloon"
                 src={remaxPhoto}
-                className="h-8 w-auto"
+                className="h-8 w-auto rounded-lg"
               />
             </a>
           </div>
@@ -55,7 +55,7 @@ export default function Nav() {
       )}
       {/* Mobile menu panel */}
       {mobileMenuOpen && (
-        <div className="fixed top-0 right-0 h-full w-64 z-[100] bg-white shadow-lg p-6 flex flex-col gap-4 overflow-auto lg:h-auto lg:top-[72px] lg:rounded-bl-xl">
+        <div className="fixed top-0 right-0 h-full w-64 z-[100] bg-sky-900 shadow-lg p-6 flex flex-col gap-4 overflow-auto lg:h-auto lg:top-[72px] lg:rounded-bl-xl">
             <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}

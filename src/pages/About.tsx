@@ -5,8 +5,8 @@ import Footer from '../components/Footer';
 const About: React.FC = () => {
   return (
     <>
-      <div className="about-container max-w-5xl mx-auto px-4 py-10 flex flex-col sm:flex-row gap-8 items-start flex-wrap">
-        <Nav />
+      <Nav />
+      <div className="about-container max-w-5xl mx-auto px-4 py-10 flex flex-col sm:flex-row gap-8 items-center flex-wrap mt-10 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm">
         <div className="w-75% sm:w-1/2 flex flex-row gap-4 justify-center items-start flex-wrap">
           <img src="/images/fishing_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
           <img src="/images/Jungle_photo.jpg" alt="Fred Carberry" className="rounded-lg shadow-md w-40 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300" />
