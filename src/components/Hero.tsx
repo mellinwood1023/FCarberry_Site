@@ -142,6 +142,24 @@ export default function Hero() {
                   </a>
                 </div>
               </div>
+
+              <div className="mt-10 flex flex-col items-center gap-4 w-full sm:hidden">
+                <a
+                  href="#"
+                  className="block text-sm text-center font-semibold border px-4 py-2 hover:bg-indigo-50 bg-sky-900 rounded-lg shadow-md p-2 text-white"
+                >
+                  Start the preapproval process →
+                </a>
+                <p>
+                  <span className="text-xs text-gray-500">or</span>
+                </p>
+                <a
+                  href="https://www.remax.com/"
+                  className="block text-sm text-center font-semibold border px-4 py-2 hover:bg-indigo-50 bg-sky-900 rounded-lg shadow-md p-2 text-white"
+                >
+                  Search for properties  →
+                </a>
+              </div>
             </div>
           </div>
         </div>
