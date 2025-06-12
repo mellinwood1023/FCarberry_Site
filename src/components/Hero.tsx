@@ -23,8 +23,8 @@ export default function Hero() {
         <nav className="flex flex-col bg-sky-900 items-center rounded-t-lg justify-between p-4 sm:p-6 lg:px-8">
           <div className="w-full flex flex-row sm:flex-row items-center gap-2">
             <img
-              src="/images/home3.jpeg"
-              alt="Home 3"
+              src="/images/fremont_house.webp"
+              alt="Fremont House"
               className="w-full h-12 sm:w-1/3 rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
             />
             <img
@@ -33,7 +33,7 @@ export default function Hero() {
               className="w-full h-12 sm:w-1/3  rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
             />
             <img
-              src="/images/house4.webp"
+              src="/images/chester_house.webp"
               alt="House 4"
               className="w-full h-12 sm:w-1/3  rounded-lg shadow-lg ring-1 ring-gray-900/10 object-cover"
             />
