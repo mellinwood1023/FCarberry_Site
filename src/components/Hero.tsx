@@ -20,6 +20,7 @@ export default function Hero() {
   return (
     <div className="bg-white rounded-b-lg shadow-lg backdrop-blur-sm ">
       <header className="relative inset-x-0 top-0 z-50">
+        <meta name="google-site-verification" content="xIeR7o3kX-frYaScekdVgKNe1oEJ28UG-VepwaL_soY" />
         <nav className="flex flex-col bg-sky-900 items-center rounded-t-lg justify-between p-4 sm:p-6 lg:px-8">
           <div className="w-full flex flex-row sm:flex-row items-center gap-2">
             <img
