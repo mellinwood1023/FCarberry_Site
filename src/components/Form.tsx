@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useForm } from '@formspree/react';
 
-export default function Form() {
+function ContactForm() {
+  const [state, handleSubmit] = useForm("manjooqj");
+ 
   const [hasPreapproval, setHasPreapproval] = useState('');
   const [budget, setBudget] = useState('');
   const formatPhone = (value : string) => {
@@ -21,8 +24,17 @@ export default function Form() {
   };
   const [ phone, setPhone ] = useState('');
 
+  if (state.succeeded) {
+    return (
+      <div className="p-8 text-center">
+        <h2 className="text-2xl font-bold text-green-700 mb-4">Form Successfully Submitted!</h2>
+        <p className="text-lg">Thank you for reaching out. I'll be in touch soon.</p>
+      </div>
+    );
+  }
+
   return (
-    <form className="space-y-8" method="POST" action="https://formspree.io/f/your-form-id">
+    <form className="space-y-8" onSubmit={handleSubmit}>
       <input type="hidden" name="_replyto" value="" />
       <div className="border-b border-gray-900/10 pb-8">
         <h2 className="text-lg font-semibold text-gray-900">Personal Information</h2>
@@ -153,10 +165,15 @@ export default function Form() {
         <button type="reset" className="text-sm font-semibold text-gray-900">
           Cancel
         </button>
-        <button className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-black shadow-md hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-          Submit
+        <button className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-black shadow-md hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          type="submit"
+          disabled={state.submitting}
+        >
+          {state.submitting ? 'Submitting...' : 'Submit'}
         </button>
       </div>
     </form>
   );
 }
+
+export default ContactForm;
