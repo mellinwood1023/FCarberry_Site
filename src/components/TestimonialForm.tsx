@@ -49,7 +49,7 @@ export default function TestimonialForm() {
       <button type="submit" className="bg-blue-600 text-black shadow-md px-4 py-2 rounded">
         Submit
       </button>
-
+    <p>No reviews yet </p>
       {submitted && <p className="text-green-600 mt-4">Thank you for your feedback!</p>}
     </form>
   );
