@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# Frederick Carberry Realtor Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive real estate website for Frederick Carberry, built with React, TypeScript, Vite, Tailwind CSS, and Headless UI. The site features information about services, testimonials, contact forms, and useful real estate resources for clients in Massachusetts and New Hampshire.
 
-Currently, two official plugins are available:
+## Features
+- **Home Page**: Hero section with agent info, call-to-action, and contact details
+- **About Me**: Agent background, experience, and personal story
+- **Services**: Detailed list of real estate services offered
+- **Testimonials**: Client reviews and testimonial submission form
+- **Contact**: Contact form (powered by Formspree) and direct email link
+- **Links**: Curated list of useful real estate resources and agent profiles
+- **Responsive Design**: Mobile-friendly navigation and layouts
+- **Accessibility**: Semantic HTML, focus states, and ARIA labels
+- **Modern UI**: Tailwind CSS, Headless UI dialogs, and Heroicons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Deployed website / Domain 
 
-## Expanding the ESLint configuration
+Personal domain for this page:  [fredcarberry.net](https://fredcarberry.net/)
+deployed through Netlify (subdomain):  https://fcarberry.netlify.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Development
+Start the local development server:
+```bash
+npm run dev
 ```
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+## Project Structure
+- `src/components/` – Reusable UI components (Hero, Footer, Form, etc.)
+- `src/pages/` – Main site pages (About, Services, Contact, etc.)
+- `public/images/` – Site and agent images
+- `tailwind.config.js` – Tailwind CSS configuration
+- `vite.config.ts` – Vite build configuration
+
+## Main Dependencies
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Headless UI](https://headlessui.com/)
+- [Heroicons](https://heroicons.com/)
+- [React Router](https://reactrouter.com/)
+- [Formspree](https://formspree.io/) (for contact form)
+
+## Credits
+- Site design and development by Magdalene Ellinwood
+- Content and images © Frederick Carberry
+
+## License
+See [LICENSE](LICENSE) for details.
