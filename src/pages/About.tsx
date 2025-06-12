@@ -23,7 +23,7 @@ const About: React.FC = () => {
               Outside of real estate, I’m proud to be a husband since 2004, a father of four, and a grandfather to three. My family is at the heart of everything I do. I also enjoy riding motorcycles, spending time on the water, and following my favorite sports teams—especially the Patriots.
             </p>
             <p className="text-gray-800 leading-relaxed">
-              I’m passionate about travel and have explored destinations across Puerto Rico, Italy, Costa Rica, and Mexico. I believe in the value of new experiences and always bring that same energy and curiosity to my work.
+              I’m passionate about travel and have explored destinations across the Dominican Republic, Italy, Costa Rica, and Mexico. I believe in the value of new experiences and always bring that same energy and curiosity to my work.
             </p>
             <p className="text-gray-800 leading-relaxed">
               In addition to real estate, I serve as Fleet Supervisor for the City of Lawrence, MA. In 2019, I was honored with the Executive Award—a recognition of leadership and dedication I bring to every professional role.
