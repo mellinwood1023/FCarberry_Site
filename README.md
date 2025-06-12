@@ -16,7 +16,11 @@ A modern, responsive real estate website for Frederick Carberry, built with Reac
 # Deployed website / Domain 
 
 Personal domain for this page:  [fredcarberry.net](https://fredcarberry.net/)
+
 deployed through Netlify (subdomain):  https://fcarberry.netlify.app/
+
+![Screenshot 2025-06-11 233019](https://github.com/user-attachments/assets/dba83fc2-3f2d-4fe0-a070-5fbe129a9b82)
+
 
 ## Getting Started
 
