@@ -26,9 +26,6 @@ const About: React.FC = () => {
               I’m passionate about travel and have explored destinations across the Dominican Republic, Italy, Costa Rica, and Mexico. I believe in the value of new experiences and always bring that same energy and curiosity to my work.
             </p>
             <p className="text-gray-800 leading-relaxed">
-              In addition to real estate, I serve as Fleet Supervisor for the City of Lawrence, MA. In 2019, I was honored with the Executive Award—a recognition of leadership and dedication I bring to every professional role.
-            </p>
-            <p className="text-gray-800 leading-relaxed">
               My approach is straightforward: treat every client with respect, honesty, and care—as if they were family. If you're searching for a real estate professional who is reliable, responsive, and deeply rooted in the community, I’d be glad to help you take the next step.
             </p>
         </div>

@@ -6,7 +6,7 @@ const PrivacyPolicy: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 text-gray-800">
         <Nav />
-      <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
+      <h1 className="text-2xl font-bold mb-4 mt-10">Privacy Policy</h1>
       <p className="mb-4">
         This website is committed to protecting your privacy. Any personal information collected through contact forms, email submissions, or other means is kept confidential and used solely for the purpose of assisting you with your real estate needs.
       </p>

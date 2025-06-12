@@ -12,7 +12,7 @@ const Links: React.FC = () => {
           <p className="pt-4 pb-6">Here are some resources and links that might be helpful for you:</p>
           <h3 className="text-xl font-semibold text-black mt-6">Find Me</h3>
           <ul className="list-disc pl-6 mt-2 text-left">
-              <li><a href="https://www.facebook.com/fredcarberryremax" className="bg-sky-900 rounded pr-0.5 pl-0.5 hover:underline">Facebook</a>  Follow me for updates and listings.</li>
+              <li><a href="https://www.facebook.com/profile.php?id=100057614132217" className="bg-sky-900 rounded pr-0.5 pl-0.5 hover:underline">Facebook</a>  Follow me for updates and listings.</li>
               <li><a href="https://www.remax.com/real-estate-agents/frederick-carberry-north-andover-ma/101985044" className="bg-sky-900 pl-0.5 rounded pr-0.5 hover:underline">RE/MAX</a>  Check out my latest properties and real estate tips.</li>
               <li><a href="https://www.linkedin.com/in/fredcarberry/" className="bg-sky-900 rounded pr-0.5 pl-0.5 hover:underline">LinkedIn</a>  Connect with me professionally.</li>
           </ul>

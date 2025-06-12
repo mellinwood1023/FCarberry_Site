@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto text-center">
                 <div className="flex flex-col items-center space-y-2 mt-4">
                     <div className="flex space-x-4 justify-center">
-                        <a href="https://www.facebook.com/fred.carberry.90" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-blue-400 transition-colors duration-200 cursor-pointer font-semibold underline focus:outline focus:ring-2 focus:ring-blue-400 active:scale-95">
+                        <a href="https://www.facebook.com/profile.php?id=100057614132217" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-blue-400 transition-colors duration-200 cursor-pointer font-semibold underline focus:outline focus:ring-2 focus:ring-blue-400 active:scale-95">
                             <span className="sr-only">Facebook</span>
                             Facebook
                         </a>
