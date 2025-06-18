@@ -1,7 +1,8 @@
+import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
-export default function ThankYou() {
+const ThankYou: React.FC = () => {
   return (
     <>
     <Nav />
@@ -20,3 +21,5 @@ export default function ThankYou() {
     </>
   );
 }
+
+export default ThankYou;
