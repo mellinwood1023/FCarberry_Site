@@ -6,7 +6,7 @@ const TermsOfService: React.FC = () => {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10 text-gray-800">
         <Nav />
-      <h1 className="text-2xl font-bold mb-4 mt-10">Terms of Service</h1>
+      <h1 className="text-2xl font-bold mb-4 mt-20">Terms of Service</h1>
 
       <p className="mb-4">
         By using this website, you agree to comply with and be bound by the following terms and conditions. Please review these terms carefully. If you do not agree with these terms, you should not use this site.
