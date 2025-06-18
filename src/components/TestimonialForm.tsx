@@ -1,56 +1,41 @@
-import { useState } from 'react';
-
 export default function TestimonialForm() {
-  const [form, setForm] = useState({ name: '', quote: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const res = await fetch('/api/testimonials', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
-    });
-
-    if (res.ok) {
-      setSubmitted(true);
-      setForm({ name: '', quote: '' });
-    }
-  };
-
   return (
-    <form onSubmit={handleSubmit} className="max-w-xl mx-auto p-4">
-      <h2 className="text-xl font-bold mb-4">Leave a review:</h2>
+    <div className="max-w-xl mx-auto p-6 bg-white rounded shadow">
+      <form
+        action="https://formsubmit.co/mellinwood1023@gmail.com" 
+        method="POST"
+      >
+        <h2 className="text-2xl font-bold mb-4">Leave a Review</h2>
 
-      <input
-        type="text"
-        name="name"
-        placeholder="Your name"
-        value={form.name}
-        onChange={handleChange}
-        className="block w-full mb-4 p-2 border rounded"
-        required
-      />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+          className="block w-full mb-4 p-3 border rounded"
+        />
 
-      <textarea
-        name="quote"
-        placeholder="What was your experience with me..."
-        value={form.quote}
-        onChange={handleChange}
-        className="block w-full mb-4 p-2 border rounded"
-        required
-      />
+        <textarea
+          name="quote"
+          placeholder="What was your experience with me..."
+          required
+          rows={5}
+          className="block w-full mb-4 p-3 border rounded"
+        />
 
-      <button type="submit" className="bg-blue-600 text-black shadow-md px-4 py-2 rounded">
-        Submit
-      </button>
-    <p>No reviews yet </p>
-      {submitted && <p className="text-green-600 mt-4">Thank you for your feedback!</p>}
-    </form>
+        {/* Optional: Disable CAPTCHA and redirect after submit */}
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+
+        <button
+          type="submit"
+          className="bg-blue-600 text-black px-6 py-2 rounded hover:bg-blue-700 transition shadow-md"
+        >
+          Submit
+        </button>
+
+        <p className="text-gray-500 mt-4">Your review will be submitted for approval.</p>
+      </form>
+    </div>
   );
 }

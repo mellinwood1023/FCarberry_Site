@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../components/Nav';
 import TestimonialForm from '../components/TestimonialForm';
 import Footer from '../components/Footer';
+import TestimonialsCarousel from '../components/TestimonialDisplay';
 
 const Testimonials: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Testimonials: React.FC = () => {
       <div className="px-4 py-8 max-w-5xl mx-auto">
         <h1 className="text-3xl font-bold text-blue-900 mt-8">My Clients Say...</h1>
                 <TestimonialForm />
-        {/* Testimonial content goes here */}
+                <TestimonialsCarousel />
       </div>
     </div>
       <Footer />
