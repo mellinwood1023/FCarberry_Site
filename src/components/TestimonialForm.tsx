@@ -25,7 +25,7 @@ export default function TestimonialForm() {
 
         {/* Optional: Disable CAPTCHA and redirect after submit */}
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://fredcarberry.net/thank-you" />
+        <input type="hidden" name="_next" value="https://fredcarberry.net/thankyou" />
 
         <button
           type="submit"
