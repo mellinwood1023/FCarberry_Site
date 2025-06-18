@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 const testimonials = [
   {
-    name: '',
-    quote: '',
+    name: 'Sam C.',
+    quote: "It's not easy finding someone you can truly trust when making such a big decision, but Fred really came through. If you're looking to buy a home and want someone who's reliable, down-to-earth, and genuinely has your back, I highly recommend working with him.",
   },
 //   {
 //     name: 'Mark R.',
