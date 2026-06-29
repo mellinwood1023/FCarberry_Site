@@ -6,6 +6,7 @@ const About: React.FC = () => {
   return (
     <>
       <Nav />
+
       <div className="about-container max-w-5xl mx-auto px-4 py-10 flex flex-col sm:flex-row gap-8 items-start mt-10 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm">
 
         {/* TEXT COLUMN – FIRST ON MOBILE, SECOND ON DESKTOP */}
@@ -23,17 +24,20 @@ const About: React.FC = () => {
               looking to invest, I offer local expertise, a steady hand, and a commitment to
               getting results.
             </p>
+
             <p className="text-gray-800 leading-relaxed">
               Outside of real estate, I’m proud to be a husband since 2004, a father of four, and a
               grandfather to three. My family is at the heart of everything I do. I also enjoy
               riding motorcycles, spending time on the water, and following my favorite sports
               teams—especially the Patriots.
             </p>
+
             <p className="text-gray-800 leading-relaxed">
               I’m passionate about travel and have explored destinations across the Dominican
               Republic, Italy, Costa Rica, and Mexico. I believe in the value of new experiences and
               always bring that same energy and curiosity to my work.
             </p>
+
             <p className="text-gray-800 leading-relaxed">
               My approach is straightforward: treat every client with respect, honesty, and care—as
               if they were family. If you're searching for a real estate professional who is
@@ -57,25 +61,35 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        {/* IMAGE COLUMN – SECOND ON MOBILE, FIRST ON DESKTOP */}
-        <div className="order-2 sm:order-1 w-full sm:w-1/4 flex flex-row gap-4 justify-center items-start flex-wrap">
-          <img
-            src="/images/fishing_photo.jpg"
-            alt="Fred Carberry"
-            className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300"
-          />
-          <img
-            src="/images/Jungle_photo.jpg"
-            alt="Fred Carberry"
-            className="rounded-lg shadow-md w-40 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300"
-          />
-          <img
-            src="/images/horses_photo.jpg"
-            alt="Fred Carberry"
-            className="rounded-lg shadow-md w-30 sm:w-32 md:w-44 lg:w-56 xl:w-64 object-cover transition-all duration-300"
-          />
+        {/* IMAGE COLUMN – CAROUSEL ON MOBILE, COLUMN ON DESKTOP */}
+        <div className="order-2 sm:order-1 w-full sm:w-1/4">
+
+          <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide sm:flex-col sm:overflow-visible">
+
+            <img
+              src="/images/fishing_photo.jpg"
+              alt="Fred Carberry Fishing"
+              className="flex-shrink-0 w-[85vw] sm:w-full rounded-lg shadow-md object-cover snap-center transition-all duration-300"
+            />
+
+            <img
+              src="/images/Jungle_photo.jpg"
+              alt="Fred Carberry Traveling"
+              className="flex-shrink-0 w-[85vw] sm:w-full rounded-lg shadow-md object-cover snap-center transition-all duration-300"
+            />
+
+            <img
+              src="/images/horses_photo.jpg"
+              alt="Fred Carberry Horses"
+              className="flex-shrink-0 w-[85vw] sm:w-full rounded-lg shadow-md object-cover snap-center transition-all duration-300"
+            />
+
+          </div>
+
         </div>
+
       </div>
+
       <Footer />
     </>
   );
